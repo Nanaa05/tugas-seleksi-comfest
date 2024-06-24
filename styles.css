@@ -85,6 +85,15 @@ body{
     margin-top: 50px;
 }
 
+@media only screen and (max-width:800px) {
+    .box-services .flexbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+
 .box-services .flexbox .box{
     display: block;
     height: 450px;
@@ -139,7 +148,7 @@ body{
 .box p{
     font-family:sans-serif;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
     color: gray;
 }
 
