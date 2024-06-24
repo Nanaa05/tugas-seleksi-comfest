@@ -1,0 +1,209 @@
+body{
+    margin:0px;
+}
+
+.flexbox-nav{
+    display:flex;
+    justify-content: right;
+    position: fixed;
+    background-color: white;
+    right: 0px;
+    width: 100%;
+    box-shadow: 0 5px 50px 0px rgba(128, 128, 128, 0.363);
+    z-index: 1;
+}
+
+.nav-bar{
+    width: fit-content;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    padding: 5px 30px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 100ms;
+}
+
+.wallpaper{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 0 10%;
+    opacity: 0.3;
+    position: fixed;
+    z-index: -1;
+}
+
+.logo{
+    display: flex;
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms;
+    z-index: 0;
+    margin-top: 50px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.logo:hover{
+    height: 100px;
+    width: 100px;
+    font-size: 19px;
+}
+
+.flexbox-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+.box-services{
+    width: 100hv;
+    height: fit-content;
+    background-color: white;
+    padding: 30px;
+}
+
+.box-services .flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.box-services .flexbox .box{
+    display: block;
+    height: 450px;
+    width: 300px;
+    margin: 0px 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.slogan{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.reserve{
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms;
+    font-style: italic;
+    border: 1px solid white;
+    cursor: pointer;
+    color: rgb(63, 63, 63);
+    
+}
+
+.reserve:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.reserve:active{
+    color: white;
+    background-color: rgba(88, 95, 112, 0.6);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.services{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.box p{
+    font-family:sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: gray;
+}
+
+.box img{
+    transition: all 200ms;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.box:hover img{
+    filter: blur(3px); 
+    height: 250px;
+    opacity: 0.3;
+}
+
+.services-title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    opacity: 0;
+    transition: all 200ms;
+    font-family:sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.box:hover .services-title{
+    opacity: 0.5;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(190, 190, 190);
+}
+
+.contact-details p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
