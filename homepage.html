@@ -8,15 +8,17 @@
 </head>
 <body>
     <div class="flexbox-nav">
-        <button class="nav-bar">HOME</button>
-        <button class="nav-bar">RESERVATION</button>
-        <button class="nav-bar">LOG IN</button>
+        <button id="home" class="nav-bar">HOME</button>
+        <button id="reservation" class="nav-bar">RESERVATION</button>
+        <button id="log-in" class="nav-bar">LOG IN</button>
     </div>
     <div class="flexbox-body">
         <img class="wallpaper" src="img\homepage-img.jpg">
         <button class="logo">SEA SALON</button>
         <p class="slogan">Beauty and Elegance Redefined</p>
-        <button class="reserve">RESERVE NOW!</button>
+        <button class="reserve">
+            <p class="reserve-text">RESERVE NOW!</p>
+        </button>
     </div>
     <div class="box-services">
         <div style="border-bottom: 1px solid black;">
@@ -26,28 +28,30 @@
             <div class="box">
                 <div style="position: relative;text-align: center;">
                     <span class="services-title">Haircuts and Styling</span>
-                    <img src="img\haircut-style.jpeg">
+                    <div class="img-box">
+                        <img src="img\haircut-style.jpeg">
+                    </div>
                 </div>
                 <p>Transform your look with our expert haircuts and styling. From classic cuts to the latest trends, our skilled stylists will create a look that's perfect for you.</p>
             </div>
             <div class="box">
                 <div style="position: relative;text-align: center;">
                     <span class="services-title">Manicure and Pedicure</span>
-                    <img src="img\manicure.jpg">
+                    <div class="img-box"><img src="img\manicure.jpg"></div>
                 </div>
                 <p>Pamper your hands and feet with our luxurious manicure and pedicure services. Enjoy a relaxing experience and leave with beautifully polished nails.</p>
             </div>
             <div class="box">
                 <div style="position: relative;text-align: center;">
                     <span class="services-title">Facial Treatments</span>
-                    <img src="img\face-treatment.jpeg">
+                    <div class="img-box"><img src="img\face-treatment.jpeg"></div>
                 </div>
                 <p>Rejuvenate your skin with our bespoke facial treatments. Our experienced estheticians use top-quality products to enhance your natural glow and leave you feeling refreshed.</p>
             </div>
         </div>
     </div>
     <div class="contact-details">
-        <h2>CONTACT DETAILS</h2>
+        <div style="border-bottom: 1px solid black;text-align: center;"><h2>CONTACT DETAILS</h2></div>
         <p>Phone Number: 08123456789 (Thomas) </p>
         <p>Phone Number: 08164829372 (Sekar)</p>
     </div>

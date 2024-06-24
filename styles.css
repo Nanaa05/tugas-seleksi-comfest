@@ -30,7 +30,7 @@ body{
 
 .wallpaper{
     width: 100%;
-    height: 600px;
+    height: 100%;
     object-fit: cover;
     object-position: 0 10%;
     opacity: 0.3;
@@ -54,7 +54,7 @@ body{
     transition: all 200ms;
     z-index: 0;
     margin-top: 50px;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 .logo:hover{
@@ -90,59 +90,20 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .box-services .flexbox .box{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
 .box-services .flexbox .box{
     display: block;
-    height: 450px;
+    height: fit-content;
     width: 300px;
     margin: 0px 10px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-
-.slogan{
-    font-family:'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 50px;
-    margin: 10px 0px;
-    text-align: center;
-}
-
-.reserve{
-    padding: 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: transparent;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    transition: all 200ms;
-    font-style: italic;
-    border: 1px solid white;
-    cursor: pointer;
-    color: rgb(63, 63, 63);
-    
-}
-
-.reserve:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-.reserve:active{
-    color: white;
-    background-color: rgba(88, 95, 112, 0.6);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
-}
-
-.services{
-    font-family:Arial, Helvetica, sans-serif ;
-    font-size: 30px;
-    margin: 0px;
 }
 
 .box p{
@@ -160,10 +121,56 @@ body{
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
+.img-box{
+    max-width: 300px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
 .box:hover img{
     filter: blur(3px); 
-    height: 250px;
+    transform: scale(1.2);
     opacity: 0.3;
+}
+
+.slogan{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.reserve{
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    transition: all 150ms;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    position: relative;
+}
+
+.reserve-text{
+    margin:0px;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(63, 63, 63);
+}
+
+.reserve:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.reserve:active{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.services{
+    margin: 0px;
 }
 
 .services-title{
@@ -194,7 +201,6 @@ body{
 }
 
 .contact-details p{
-    margin-top: 0px;
     margin-bottom: 10px;
 }
 
