@@ -114,7 +114,7 @@ body{
 }
 
 .box img{
-    transition: all 200ms;
+    transition: all 1000ms;
     object-fit: cover;
     height: 200px;
     width: 100%;
@@ -129,7 +129,7 @@ body{
 
 .box:hover img{
     filter: blur(3px); 
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.3;
 }
 
@@ -248,8 +248,43 @@ background: #555;
     display:none;
     padding:40px;
     font-size: 20px;
+    z-index: 10;
 }
 
 #requirement{
     display:none;
+}
+
+.review-show{
+    display:flex;
+    overflow:auto;
+}
+.review-show .box{
+    padding: 10px 15px;
+    height: 80px;
+    width:170px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    flex-shrink: 0;
+    transition: all 100ms;
+    position: relative;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    padding-bottom: 0px;
+}
+
+
+.show-more{
+    position:absolute;
+    top: 90%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    background-color: rgb(222, 222, 222); 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.1);
+    width: 85%;
 }
