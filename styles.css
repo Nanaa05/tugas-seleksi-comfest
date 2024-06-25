@@ -222,3 +222,34 @@ background: #888;
 ::-webkit-scrollbar-thumb:hover {
 background: #555; 
 }
+
+.write-review{
+    display: block;
+    padding: 10px;
+
+}
+
+.write-review p{
+    font-family:sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: gray;
+}
+
+.review{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 220px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+    display:none;
+    padding:40px;
+    font-size: 20px;
+}
+
+#requirement{
+    display:none;
+}

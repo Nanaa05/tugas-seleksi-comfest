@@ -10,6 +10,7 @@
     <div class="flexbox-nav">
         <button id="home" class="nav-bar">HOME</button>
         <button id="reservation" class="nav-bar">RESERVATION</button>
+        <button id="reviews" class="nav-bar">REVIEWS</button>
         <button id="log-in" class="nav-bar">LOG IN</button>
     </div>
     <div class="flexbox-body">
@@ -50,11 +51,60 @@
             </div>
         </div>
     </div>
+    <div class="box-services">
+        <div style="border-bottom: 1px solid black;">
+            <h2 class="services">REVIEWS</h2>
+        </div>
+        <div class="write-review">
+            <p>Write your own review!</p>
+            <button onclick="addReview()">Add Review</button>
+        </div>
+        <div id="review" class="review">
+            Your name:
+            <br>
+            <input id="name" type="text">
+            <br>
+            <br>
+            Rate our service from 1-5:
+            <br>
+            <div style="display:flex;justify-content: left;">
+                <div style="position: relative;">
+                    <input class="check" id='rate1'type="checkbox"onclick='check("rate1")'>
+                    <p style="position: absolute;top:0px;left:25%">1</p>
+                </div>
+                <div style="position: relative;">
+                    <input class="check" id='rate2'type="checkbox"onclick='check("rate2")'>
+                    <p style="position: absolute;top:0px;left:25%">2</p>
+                </div>
+                <div style="position: relative;">
+                    <input class="check" id='rate3'type="checkbox"onclick='check("rate3")'>
+                    <p style="position: absolute;top:0px;left:25%">3</p>
+                </div>
+                <div style="position: relative;">
+                    <input class="check" id='rate4'type="checkbox"onclick='check("rate4")'>
+                    <p style="position: absolute;top:0px;left:25%">4</p>
+                </div>
+                <div style="position: relative;">
+                    <input class="check" id='rate5'type="checkbox"onclick='check("rate5")'>
+                    <p style="position: absolute;top:0px;left:25%">5</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            Tell us your comment:
+            <input id="comment" type="text">
+            <br>
+            <br>
+            <button onclick="submitReview()">Submit</button> <button onclick="cancelReview()">Cancel</button>
+            <br>
+            <div id="requirement" style="font-size: 15px;color:red"> please fill all required input</div>
+        </div>
+    </div>
     <div class="contact-details">
         <div style="border-bottom: 1px solid black;text-align: center;"><h2>CONTACT DETAILS</h2></div>
         <p>Phone Number: 08123456789 (Thomas) </p>
         <p>Phone Number: 08164829372 (Sekar)</p>
     </div>
-    <script href="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
