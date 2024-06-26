@@ -1,8 +1,30 @@
 // let review = [{'name':'Nathanael Rachmat','rating':5,'comment':'Rejuvenate your skin with our bespoke facial treatments. Our experienced estheticians use top-quality products to enhance your natural glow and leave you feeling refreshed.'}];
 // renderReview();
 
+let review = []
+
 function addReview() {
     document.getElementById('review').style.display = 'block';
+}
+
+const page = (document.getElementById('title').innerText)
+if (page == 'Home') {
+    const Element = document.getElementById('home');
+    Element.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+    Element.style.boxShadow = 'inset 0px 0px 15px 0px rgba(0, 0, 0, 0.1)';
+}
+else if (page == 'Reservation'){
+    const Element = document.getElementById('reservation');
+    Element.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+    Element.style.boxShadow = 'inset 0px 0px 15px 0px rgba(0, 0, 0, 0.1)';
+}
+
+function homePage(){
+    window.location.href = 'homepage.html'
+}
+
+function reservePage(){
+    window.location.href = 'reservationpage.html'
 }
 
 function check(string) {
@@ -122,6 +144,3 @@ function showLess(i){
     button.style.width = '85%'
 }
 
-// top: 80px;
-//     left: 50%;
-//     transform : translate(-50%,-50%);

@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title id="title">Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="flexbox-nav">
-        <button id="home" class="nav-bar">HOME</button>
-        <button id="reservation" class="nav-bar">RESERVATION</button>
-        <button id="reviews" class="nav-bar">REVIEWS</button>
-        <button id="log-in" class="nav-bar">LOG IN</button>
+        <button id="home" class="nav-bar" onclick="">HOME</button>
+        <button id="reservation" class="nav-bar" onclick="reservePage()">RESERVATION</button>
+        <button id="log-in" class="nav-bar" onclick="logInPage()">LOG IN</button>
     </div>
     <div class="flexbox-body">
         <img class="wallpaper" src="img\homepage-img.jpg">
         <button class="logo">SEA SALON</button>
         <p class="slogan">Beauty and Elegance Redefined</p>
-        <button class="reserve">
+        <button class="reserve" onclick="reservePage()">
             <p class="reserve-text">RESERVE NOW!</p>
         </button>
     </div>
